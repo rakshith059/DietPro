@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/fragmentRegistertilName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.widget.EditText
+            android:id="@+id/fragmentRegisteretName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/register_name" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/fragmentRegistertilMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.widget.EditText
+            android:id="@+id/fragmentRegisteretMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:hint="@string/register_mobile" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/fragmentRegistertilEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.widget.EditText
+            android:id="@+id/fragmentRegisteretEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/register_email" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/fragmentRegistertilPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.widget.EditText
+            android:id="@+id/fragmentRegisteretPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/register_password" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/fragmentRegistertvSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size20"
+        android:background="@drawable/round_corner_btn"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size20"
+        android:textStyle="bold" />
+
+</LinearLayout>

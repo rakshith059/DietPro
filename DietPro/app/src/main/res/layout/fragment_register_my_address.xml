@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.widget.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="@string/add_address"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/fragmentMyAddressrgAddressType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/fragmentMyAddressrbHomeAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/home_address"/>
+
+                <RadioButton
+                    android:id="@+id/fragmentMyAddressrbGymAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/gym_address"/>
+
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragmentMyAddresstilName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.widget.EditText
+                    android:id="@+id/fragmentMyAddressetName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/register_name"
+                    android:inputType="textCapWords" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragmentMyAddresstilAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.widget.EditText
+                    android:id="@+id/fragmentMyAddressetAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address_hint"
+                    android:maxLines="3"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragmentMyAddresstilLandMark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.widget.EditText
+                    android:id="@+id/fragmentMyAddressetLandMark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/landmark_hint"
+                    android:inputType="textCapWords" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragmentMyAddresstilPincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.widget.EditText
+                    android:id="@+id/fragmentMyAddressetPincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pincode_hint"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragmentMyAddresstilCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.widget.EditText
+                    android:id="@+id/fragmentMyAddressetCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/city_hint"
+                    android:inputType="textCapWords" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragmentMyAddresstilState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.widget.EditText
+                    android:id="@+id/fragmentMyAddressetState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/state_hint"
+                    android:inputType="textCapWords" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragmentMyAddresstilPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.widget.EditText
+                    android:id="@+id/fragmentMyAddressetPhoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone_no_hint"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragmentMyAddresstilEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.widget.EditText
+                    android:id="@+id/fragmentMyAddressetEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_hint"
+                    android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.widget.TextView
+        android:id="@+id/fragmentMyAddresstvSaveAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/save_address"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size20"
+        android:textStyle="bold" />
+
+</LinearLayout>

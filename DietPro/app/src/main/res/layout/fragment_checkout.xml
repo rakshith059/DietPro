@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.widget.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="@string/checkout"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size20"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/flavor_text"
+                android:textSize="@dimen/size20"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/fragmentCheckoutrgFlavour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/fragmentCheckoutrbFlavourPlain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/plain" />
+
+                <RadioButton
+                    android:id="@+id/fragmentCheckoutrbFlavourLime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lime" />
+
+                <RadioButton
+                    android:id="@+id/fragmentCheckoutrbFlavourGinger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ginger" />
+
+                <RadioButton
+                    android:id="@+id/fragmentCheckoutrbFlavourGarlic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/garlic" />
+
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.widget.EditText
+                    android:id="@+id/fragmentRecipesDetailtvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="@string/add_comments"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:textSize="20dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <android.widget.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_address"
+                    android:gravity="center"
+                    android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                    android:layout_weight="1"/>
+
+                <android.widget.TextView
+                    android:id="@+id/fragmentCheckouttvChangeAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change"
+                    android:padding="5dp"
+                    android:gravity="right"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/my_address_row"/>
+
+            <android.widget.TextView
+            android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="@dimen/size15"
+                android:text="@string/select_payment_mode"/>
+
+            <RadioGroup
+                android:id="@+id/fragmentCheckoutrgPaymentMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/fragmentCheckoutrbCod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cod"
+                    android:padding="5dp"
+                    android:enabled="true"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/fragmentCheckoutrbonlinePayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/online"
+                    android:padding="5dp"
+                    android:enabled="false"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/common_signin_btn_light_text_default"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <android.widget.TextView
+            android:id="@+id/fragmentCheckouttvTotalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <android.widget.TextView
+            android:id="@+id/fragmentCheckouttvPlaceOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:padding="10dp"
+            android:text="@string/place_order"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/activityMainDrawerHome"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="Home" />
+        <item
+            android:id="@+id/activityMainDrawerLogin"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="Login" />
+        <item
+            android:id="@+id/activityMainDrawerMyOrders"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/activityMainDrawerMyAddress"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="My Address" />
+        <item
+            android:id="@+id/activityMainDrawerContactUs"
+            android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/activityMainDrawerAboutUs"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="About Us" />
+
+        <item
+            android:id="@+id/activityMainDrawerLogout"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="Logout" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@android:drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@android:drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

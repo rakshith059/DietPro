@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/quikrxCustomActionBartvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/quikrxCustomActionBartvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/quikrxCustomActionBartvBack"
+        android:layout_toEndOf="@+id/quikrxCustomActionBartvBack" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/quikrcCustomActionBarrlMyCart"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_centerVertical="true"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/customActionBarivMyCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:src="@drawable/ic_shopping_cart_white_24dp" />
+
+        <TextView
+            android:id="@+id/customActionBartvCartCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/cart_count_circle"
+            android:paddingBottom="3dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="3dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="3dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

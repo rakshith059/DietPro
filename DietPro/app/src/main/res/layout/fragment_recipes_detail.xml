@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <android.widget.TextView
+        android:id="@+id/fragmentRecipesDetailtvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sample1"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"/>
+
+    <android.widget.ImageView
+        android:id="@+id/fragmentRecipesDetailivRecipeImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:src="@drawable/diet_pro_image2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <android.widget.TextView
+                android:id="@+id/fragmentRecipesDetailtvContent1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sample1"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+
+            <android.widget.TextView
+                android:id="@+id/fragmentRecipesDetailtvContent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sample2"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <android.widget.TextView
+                android:id="@+id/fragmentRecipesDetailtvContent3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sample1"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+
+            <android.widget.TextView
+                android:id="@+id/fragmentRecipesDetailtvContent4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sample2"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <android.widget.TextView
+            android:id="@+id/fragmentRecipesDetailtvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bordered_image"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:background="#999999">
+
+        <android.widget.TextView
+            android:id="@+id/fragmentRecipesDetailtvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="200"/>
+
+        <android.widget.ImageView
+            android:id="@+id/fragmentRecipesDetailivAddToCart"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_add_shopping_cart_white_24dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
